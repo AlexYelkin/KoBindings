@@ -1,6 +1,6 @@
-/// <reference path="../../typings/knockout/knockout.d.ts" />
+/// <reference path="./typings/knockout/knockout.d.ts" />
 module DataM {    
-    //#region ko Вспомогательные методы.
+    //#region ko пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ.
     ko.observable.fn.beforeAndAfterSubscribe = function <T>(callback: (oldValue: T, newValue: T) => void, target?: any, event?: string): KnockoutSubscription {
         var _oldValue;
         this.subscribe(function (oldValue) {
@@ -66,18 +66,18 @@ module DataM {
     ko.virtualElements.allowedBindings["windowResize"] = true;
 
     /**
-     * Внедряет элемент управления PP.
+     * пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ PP.
      * @namespace Ghed
      */
     module Ghed {
         //#region 
         ko.bindingHandlers.ppcontrol = {
             /**
-             * Внедряет элемент управления PP.
+             * пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ PP.
              * 
-             * @param element Вершина для связки
-             * @param valueAccessor Наблюдаемое значение
-             * @param allBindingsAccessor Другие обработчики
+             * @param element пїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅ
+             * @param valueAccessor пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
+             * @param allBindingsAccessor пїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
              * @param viewModel 
              * @param bindingContext 
              */
